@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mood Mapper</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/cerulean/bootstrap.min.css" rel="stylesheet" integrity="sha384-zF4BRsG/fLiTGfR9QL82DrilZxrwgY/+du4p/c7J72zZj+FLYq4zY00RylP9ZjiT" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/survey.css">
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <fieldset>
+            <section id="intro">
+                <h1 class="text-center">Welcome!</h1>
+                <p>
+                    We are looking to understand the way in which mood may affect your daily life.
+                </p>
+                <p>Over the next 5 minutes we will ask you to review some examples of faces that relate to different descriptions of mood.</p>
+                <p><b>DO NOT CLICK REFRESH</b></p>
+                <p>Please click "Next" to begin!</p>
+                <button class="btn-lg btn-primary" id="next0">Next</button>
+            </section>
+            <section id="item1" class="form-group">
+                <h4>Question 1</h4>
+                <h5>
+                    Review this question and answer it to the best of your ability.
+                </h5>
+                <label for="item1" class="control-label">
+                    Please select the face that best represents your mood currently.
+                </label>
+                <div for="item1">
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="radio">
+                                  <label class="label-face">
+                                    <input type="radio" name="fiveFace" id="fiveFaceId1" value="1" required>
+                                    <img height="100px" src="assets/img/face1.png" alt="face">
+                                  </label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="radio">
+                                  <label class="label-face">
+                                    <input type="radio" name="fiveFace" id="fiveFaceId2" value="2" required>
+                                    <img height="100px" src="assets/img/face2.png" alt="face">
+                                  </label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="radio">
+                                  <label class="label-face">
+                                    <input type="radio" name="fiveFace" id="fiveFaceId3" value="3" required>
+                                    <img height="100px" src="assets/img/face3.png" alt="face">
+                                  </label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="radio">
+                                  <label class="label-face">
+                                    <input type="radio" name="fiveFace" id="fiveFaceId4" value="4" required>
+                                    <img height="100px" src="assets/img/face4.png" alt="face">
+                                  </label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="radio">
+                                  <label class="label-face">
+                                    <input type="radio" name="fiveFace" id="fiveFaceId5" value="5" required>
+                                    <img height="100px" src="assets/img/face5.png" alt="face">
+                                  </label>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <button class="btn-lg btn-primary" id="next1">Next</button>
+            </section>
+            <section id="item2" class="form-group">
+                <h4>Question 2</h4>
+                <h5>
+                    Review this question and answer it to the best of your ability.
+                </h5>
+                <label for="item2" class="control-label">
+                    Please select the number that best represents your mood currently, with 1 representing worst, and 5 representing best.
+                </label>
+                <div for="item2" class="btn-group btn-group-justified">
+                    <label class="radio btn btn-default label-number">
+                        <input type="radio" name="fiveNumber" id="fiveNumberId1" value="1" required>
+                        1
+                    </label>
+                    <label class="radio btn btn-default label-number">
+                        <input type="radio" name="fiveNumber" id="fiveNumberId2" value="2" required>
+                        2
+                    </label>
+                    <label class="radio btn btn-default label-number">
+                        <input type="radio" name="fiveNumber" id="fiveNumberId3" value="3" required>
+                        3
+                    </label>
+                    <label class="radio btn btn-default label-number">
+                        <input type="radio" name="fiveNumber" id="fiveNumberId4" value="4" required>
+                        4
+                    </label>
+                    <label class="radio btn btn-default label-number">
+                        <input type="radio" name="fiveNumber" id="fiveNumberId5" value="5" required>
+                        5
+                    </label>
+                </div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <button class="btn-lg btn-primary" id="next2">Next</button>
+            </section>
+            <section id="item3" class="form-group">
+                <h4>Question 3</h4>
+                <h5>
+                    Review this question and answer it to the best of your ability.
+                </h5>
+                <label for="item3" class="control-label">
+                    Please select the face that best represents your mood currently.
+                </label>
+                <div for="item3">
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="radio">
+                                  <label class="label-face">
+                                    <input type="radio" name="fourFace" id="fourFaceId1" value="1" required>
+                                    <img height="100px" src="assets/img/face1.png" alt="face">
+                                  </label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="radio">
+                                  <label class="label-face">
+                                    <input type="radio" name="fourFace" id="fourFaceId2" value="2" required>
+                                    <img height="100px" src="assets/img/face2.png" alt="face">
+                                  </label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="radio">
+                                  <label class="label-face">
+                                    <input type="radio" name="fourFace" id="fourFaceId3" value="3" required>
+                                    <img height="100px" src="assets/img/face4.png" alt="face">
+                                  </label>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="radio">
+                                  <label class="label-face">
+                                    <input type="radio" name="fourFace" id="fourFaceId4" value="4" required>
+                                    <img height="100px" src="assets/img/face5.png" alt="face">
+                                  </label>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <button class="btn-lg btn-primary" id="next3">Next</button>
+            </section>
+            <section id="item4" class="form-group">
+                <h4>Question 4</h4>
+                <h5>
+                    Review this question and answer it to the best of your ability.
+                </h5>
+                <label for="item4" class="control-label">
+                    Please select the number that best represents your mood currently, with 1 representing worst, and 4 representing best.
+                </label>
+                <div for="item4" class="btn-group btn-group-justified">
+                    <label class="radio btn btn-default label-number">
+                        <input type="radio" name="fourNumber" id="fourNumberId1" value="1" required>
+                        1
+                    </label>
+                    <label class="radio btn btn-default label-number">
+                        <input type="radio" name="fourNumber" id="fourNumberId2" value="2" required>
+                        2
+                    </label>
+                    <label class="radio btn btn-default label-number">
+                        <input type="radio" name="fourNumber" id="fourNumberId3" value="3" required>
+                        3
+                    </label>
+                    <label class="radio btn btn-default label-number">
+                        <input type="radio" name="fourNumber" id="fourNumberId4" value="4" required>
+                        4
+                    </label>
+                </div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <button class="btn-lg btn-primary" id="next4">Next</button>
+            </section>
+            <section class="form-group" id="submit-button">
+                <h1 class="text-center">Click the button below to submit your answers!</h1>
+                <br>
+                <br>
+                <hr>
+                <br>
+                <br>
+                <button type="submit" class="btn btn-danger btn-lg btn-block" id="submit">Submit</button>
+            </section>
+            <section id="outro">
+                <h1 class="text-center">Thank you!</h1>
+                <p class="text-center">
+                    Your feedback is greatly appreciated!
+                </p>
+                <p class="text-center">Your code is:</p>
+                <h3 class="text-center">Xty87dy2</h3>
+            </section>
+        </fieldset>
+    </div>
+    <script type="text/javascript">
+
+        $('.label-face input[type="radio"]').click(function() {
+            $(this).parent().parent().parent().addClass('active').siblings('td').removeClass('active');
+        });
+
+        $('.label-number input[type="radio"]').click(function() {
+            $(this).parent().addClass('btn-success').removeClass('btn-default').siblings('label').removeClass('btn-success').addClass('btn-default');
+        });
+
+        $('#intro').show();
+        $('#item1').hide();
+        $('#item2').hide();
+        $('#item3').hide();
+        $('#item4').hide();
+        $('#submit-button').hide();
+        $('#outro').hide();
+
+        $('#next0').on('click', function(){
+            $('#intro').hide();
+            $('#item1').show();
+            return false;
+        });
+
+        $('#next1').on('click', function(){
+            if ($("#item1 input[type='radio']:checked").length === 0) {
+                alert('Please select an answer');
+            } else {
+                $('#item1').hide();
+                $('#item2').show();
+            }
+            return false;
+        });
+
+        $('#next2').on('click', function(){
+            if ($("#item2 input[type='radio']:checked").length === 0) {
+                alert('Please select an answer');
+            } else {
+                $('#item2').hide();
+                $('#item3').show();
+            }
+            return false;
+        });
+
+        $('#next3').on('click', function(){
+            if ($("#item3 input[type='radio']:checked").length === 0) {
+                alert('Please select an answer');
+            } else {
+                $('#item3').hide();
+                $('#item4').show();
+            }
+            return false;
+        });
+
+        $('#next4').on('click', function(){
+            if ($("#item4 input[type='radio']:checked").length === 0) {
+                alert('Please select an answer');
+            } else {
+                $('#item4').hide();
+                $('#submit-button').show();
+            }
+            return false;
+        });
+
+        // Listener for submit button click
+        $('#submit').on('click', function(event) {
+            // prevents the default submit button action
+            event.preventDefault();
+            // Set local variables
+            var item1 = parseInt($("#item1 input[type='radio']:checked").val());
+            var item2 = parseInt($("#item2 input[type='radio']:checked").val());
+            var item3 = parseInt($("#item3 input[type='radio']:checked").val());
+            var item4 = parseInt($("#item4 input[type='radio']:checked").val());
+            var item5 = parseInt($("#item5 input[type='radio']:checked").val());
+            var item6 = parseInt($("#item6 input[type='radio']:checked").val());
+            var item7 = parseInt($("#item7 input[type='radio']:checked").val());
+            var item8 = parseInt($("#item8 input[type='radio']:checked").val());
+            var item9 = parseInt($("#item9 input[type='radio']:checked").val());
+            var item10 = parseInt($("#item10 input[type='radio']:checked").val());
+            var item11 = parseInt($("#item11 input[type='radio']:checked").val());
+            var item12 = parseInt($("#item12 input[type='radio']:checked").val());
+            var item13 = parseInt($("#item13 input[type='radio']:checked").val());
+            var item14 = parseInt($("#item14 input[type='radio']:checked").val());
+            var item15 = parseInt($("#item15 input[type='radio']:checked").val());
+            var item16 = parseInt($("#item16 input[type='radio']:checked").val());
+            var item17 = parseInt($("#item17 input[type='radio']:checked").val());
+            var item18 = parseInt($("#item18 input[type='radio']:checked").val());
+            var item19 = parseInt($("#item19 input[type='radio']:checked").val());
+            var item20 = parseInt($("#item20 input[type='radio']:checked").val());
+
+            // Set data to be sent to server
+            var survey = {
+                q1: item1,
+                q2: item2,
+                q3: item3,
+                q4: item4,
+                q5: item5,
+                q6: item6,
+                q7: item7,
+                q8: item8,
+                q9: item9,
+                q10: item10,
+                q11: item11,
+                q12: item12,
+                q13: item13,
+                q14: item14,
+                q15: item15,
+                q16: item16,
+                q17: item17,
+                q18: item18,
+                q19: item19,
+                q20: item20
+            };
+
+            // AJAX post the data 
+            $.post('/', survey, function(data) {
+                $('#submit-button').hide();
+                $('#outro').show();
+            });
+        });
+    </script>
+</body>
+
+</html>
