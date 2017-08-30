@@ -1023,13 +1023,13 @@
             var item18 = parseInt($("#item18 input[type='radio']:checked").val());
             var item19 = parseInt($("#item19 input[type='radio']:checked").val());
             var item20 = parseInt($("#item20 input[type='radio']:checked").val());
-            var rawUrl = window.location.href
+            var rawUrl = window.location.href;
             var urlArray = rawUrl.split('/');
             var mTurkCohort = urlArray[urlArray.length - 1];
 
             // Set data to be sent to server
             var survey = {
-                cohort: mTurkCohort
+                cohort: mTurkCohort,
                 q1: item1,
                 q2: item2,
                 q3: item3,
