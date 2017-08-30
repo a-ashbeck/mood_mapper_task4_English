@@ -1,21 +1,24 @@
 // Require dependencies
 var express = require('express');
 var db = require('../models');
+var path = require('path');
 
 // Export controller defined routes
 module.exports = function(app) {
+    app.get('/:id', function(request, response) {
+        response.sendFile(path.join(__dirname, '../public/index.html'));
+    });
     // Post function to add new survey
     app.post('/:id', function(request, response) {
         var survey = request.body;
-        var mTurkCohort = request.params.id;
         // if no survey is defined just return
         if (survey === '') {
-            response.redirect('/');
+            response.redirect('/' + mTurkCohort);
             return;
         }
         // Create the new survey in DB
         db.Survey.create({
-            cohort: mTurkCohort,
+            cohort: survey.cohort,
             q1: survey.q1,
             q2: survey.q2,
             q3: survey.q3,
