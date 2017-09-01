@@ -19,6 +19,7 @@ module.exports = function(app) {
         // Create the new survey in DB
         db.Survey.create({
             cohort: survey.cohort,
+            code: survey.code,
             q1: survey.q1,
             q2: survey.q2,
             q3: survey.q3,

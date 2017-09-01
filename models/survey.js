@@ -12,6 +12,10 @@ module.exports = function(sequelize, DataTypes) {
             type: DataTypes.INTEGER,
             allowNull: false
         },
+        code: {
+            type: DataTypes.INTEGER,
+            allowNull: false
+        },
         q1: {
             type: DataTypes.INTEGER,
             allowNull: false

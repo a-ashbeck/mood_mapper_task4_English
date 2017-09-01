@@ -1027,6 +1027,9 @@
             var rawUrl = window.location.href;
             var urlArray = rawUrl.split('/');
             var mTurkCohort = urlArray[urlArray.length - 1];
+            var code = Math.floor(Math.random() * 1000000);
+
+            $('#code').text(code);
 
             if (mTurkCohort === '') {
                 mTurkCohort = 0;
@@ -1035,6 +1038,7 @@
             // Set data to be sent to server
             var survey = {
                 cohort: mTurkCohort,
+                code: code,
                 q1: item1,
                 q2: item2,
                 q3: item3,
@@ -1056,8 +1060,6 @@
                 q19: item19,
                 q20: item20
             };
-
-            $('#code').text(Math.floor(Math.random() * 1000000));
 
             // AJAX post the data 
             $.post('/:id', survey, function(data) {
