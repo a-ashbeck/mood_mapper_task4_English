@@ -1391,6 +1391,7 @@
         $('#next0').on('click', function(){
             $('#intro').hide();
             $('#num-survey').show();
+            $('body').scrollTop(0);
             return false;
         });
 
@@ -1400,6 +1401,7 @@
             } else {
                 $('#num-survey').hide();
                 $('#face-survey').show();
+                $('body').scrollTop(0);
             }
             return false;
         });
@@ -1410,6 +1412,7 @@
             } else {
                 $('#face-survey').hide();
                 $('#submit-button').show();
+                $('body').scrollTop(0);
             }
             return false;
         });
@@ -1520,6 +1523,7 @@
             $.post('/:id', survey, function(data) {
                 $('#submit-button').hide();
                 $('#outro').show();
+                $('body').scrollTop(0);
             });
         });
     </script>
