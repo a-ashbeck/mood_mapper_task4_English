@@ -1384,9 +1384,8 @@
 
             $.getJSON("https://freegeoip.net/json/", function(data) {
                 country = data.country_name;
+                console.log(country);
             });
-
-            console.log(country);
 
             $('.label-number input[type="radio"]').click(function() {
                 $(this).parent().addClass('btn-success').removeClass('btn-default').siblings('label').removeClass('btn-success').addClass('btn-default');
