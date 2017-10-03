@@ -1381,14 +1381,14 @@
     <script type="text/javascript">
         var country;
         
-        $.getScript('http://www.geoplugin.net/javascript.gp', function() {
+        $.getScript('https://www.geoplugin.net/javascript.gp', function() {
             country = geoplugin_countryName();
         });
 
         $('.label-number input[type="radio"]').click(function() {
             $(this).parent().addClass('btn-success').removeClass('btn-default').siblings('label').removeClass('btn-success').addClass('btn-default');
         });
-        
+
         window.onbeforeunload = function () {
             return "";
         };
