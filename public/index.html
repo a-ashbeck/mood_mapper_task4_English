@@ -1388,6 +1388,10 @@
         $('.label-number input[type="radio"]').click(function() {
             $(this).parent().addClass('btn-success').removeClass('btn-default').siblings('label').removeClass('btn-success').addClass('btn-default');
         });
+        
+        window.onbeforeunload = function () {
+            return "";
+        };
 
         var timeStampStart = 0;
         var timeStampItem1 = 0;
