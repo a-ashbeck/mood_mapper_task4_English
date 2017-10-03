@@ -9,7 +9,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/cerulean/bootstrap.min.css" rel="stylesheet" integrity="sha384-zF4BRsG/fLiTGfR9QL82DrilZxrwgY/+du4p/c7J72zZj+FLYq4zY00RylP9ZjiT" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/survey.css">
     <script src="https://code.jquery.com/jquery.js"></script>
-    <script src="https://www.geoplugin.net/javascript.gp" type="text/javascript"></script>
+    <script language="JavaScript" src="http://www.geoplugin.net/javascript.gp" type="text/javascript"></script>
     <script type="text/javascript" src="https://l2.io/ip.js?var=myip"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 </head>
@@ -1380,20 +1380,17 @@
         </fieldset>
     </div>
     <script type="text/javascript">
-        var country;
-        
-        $.getScript('https://www.geoplugin.net/javascript.gp', function() {
-            country = geoplugin_countryName();
-            console.log(country);
-        });
+        var country = geoplugin_countryName();
+
+        console.log(country);
 
         $('.label-number input[type="radio"]').click(function() {
             $(this).parent().addClass('btn-success').removeClass('btn-default').siblings('label').removeClass('btn-success').addClass('btn-default');
         });
 
-        // window.onbeforeunload = function () {
-        //     return "";
-        // };
+        window.onbeforeunload = function () {
+            return "";
+        };
 
         var timeStampStart = 0;
         var timeStampItem1 = 0;
