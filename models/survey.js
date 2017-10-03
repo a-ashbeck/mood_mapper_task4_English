@@ -17,8 +17,7 @@ module.exports = function(sequelize, DataTypes) {
             allowNull: false
         },
         country: {
-            type: DataTypes.STRING,
-            defaultValue: "Unknown"
+            type: DataTypes.STRING
         },
         startTime: {
             type: DataTypes.BIGINT,
